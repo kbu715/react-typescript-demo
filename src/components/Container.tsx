@@ -1,11 +1,12 @@
 type ContainerProps = {
+  children: React.ReactNode
   styles: React.CSSProperties // react version 17 ~
 }
 
-export const Container = ({styles}: ContainerProps) => {
+export const Container = ({children, styles}: ContainerProps) => {
   return (
     <div style={styles}>
-      Text content goes here
+      {children}
     </div>
   )
 }
