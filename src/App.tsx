@@ -1,5 +1,6 @@
 import './App.css';
-import { List } from './components/generics/List';
+import Test from './components/Test';
+// import { List } from './components/generics/List';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         onClick={item => console.log(item)}
       /> */}
       {/* <List items={[1, 2, 3]} onClick={item => console.log(item)} /> */}
-      <List
+      {/* <List
         items={[
           {
             id: 1,
@@ -31,7 +32,9 @@ function App() {
           }
         ]}
         onClick={item => console.log(item)}
-      />
+      /> */}
+
+      <Test />
     </div>
   );
 }
