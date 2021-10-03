@@ -5,10 +5,10 @@ type PersonListProps = {
   }[]
 }
 
-export const PersonList = (props: PersonListProps) => {
+export const PersonList = ({nameList}: PersonListProps) => {
   return (
     <div>
-      {props.nameList.map(name => {
+      {nameList.map(name => {
         return (
           <h2 key={name.first+name.last}>{name.first} {name.last}</h2>
         )

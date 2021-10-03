@@ -5,10 +5,10 @@ type PersonProps = {
   }
 }
 
-export const Person = (props: PersonProps) => {
+export const Person = ({name: {first, last}}: PersonProps) => {
   return (
     <div>
-      {props.name.first} {props.name.last}
+      {first} {last}
     </div>
   )
 }

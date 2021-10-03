@@ -4,13 +4,12 @@ type GreetProps = {
   isLoggedIn: boolean
 }
 
-export const Greet = (props: GreetProps) => {
-  const { messageCount = 0} = props; // default 0
+export const Greet = ({name, messageCount = 0, isLoggedIn}: GreetProps) => {
   return (
     <div>
       <h2>
       {
-        props.isLoggedIn ?`Welcome ${props.name}! You have ${messageCount} unread messages`: `Welcome Guest`
+        isLoggedIn ?`Welcome ${name}! You have ${messageCount} unread messages`: `Welcome Guest`
       }
       </h2>
     </div>
