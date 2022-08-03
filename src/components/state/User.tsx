@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
 type AuthUser = {
   name: string
@@ -6,18 +6,17 @@ type AuthUser = {
 }
 
 export const User = () => {
-
-  // type assertion 
+  // type assertion
   // when we know better than the compiler
-  const [user, setUser] = useState<AuthUser>({} as AuthUser);
+  const [user, setUser] = useState<AuthUser>({} as AuthUser)
 
   const handleLogin = () => {
     setUser({
-      name: "Paul",
-      email: "kbu715@gmail.com"
+      name: 'Paul',
+      email: 'kbu715@gmail.com',
     })
-  };
-  
+  }
+
   return (
     <div>
       <button onClick={handleLogin}>Login</button>

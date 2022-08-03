@@ -1,18 +1,18 @@
-import { useContext } from 'react';
-import { UserContext } from './UserContext';
+import { useContext } from 'react'
+import { UserContext } from './UserContext'
 
 export const User = () => {
-  const userContext = useContext(UserContext);
+  const userContext = useContext(UserContext)
   const handleLogin = () => {
-      userContext.setUser({
-        name: "Paul Kang",
-        email: 'kbu715@naver.com'
-      })
-   };
+    userContext.setUser({
+      name: 'Paul Kang',
+      email: 'kbu715@naver.com',
+    })
+  }
   const handleLogout = () => {
-      userContext.setUser(null);
-  };
-  
+    userContext.setUser(null)
+  }
+
   return (
     <div>
       <button onClick={handleLogin}>Login</button>

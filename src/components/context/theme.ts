@@ -9,6 +9,6 @@ export const theme = {
   },
   dark: {
     main: 'rgb(72,72,74)',
-    text: '#fff'
-  }
+    text: '#fff',
+  },
 }

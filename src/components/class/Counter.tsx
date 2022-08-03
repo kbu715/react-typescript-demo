@@ -13,7 +13,7 @@ export class Counter extends Component<CounterProps, CounterState> {
   }
 
   handleClick = () => {
-    this.setState(prevState => ({ count: prevState.count + 1 }))
+    this.setState((prevState) => ({ count: prevState.count + 1 }))
   }
   render() {
     return (

@@ -22,16 +22,10 @@ type Zero = RandomNumberType & {
 
 type RandomNumberProps = PositiveNumber | NegativeNumber | Zero
 
-export const RandomNumber = ({
-  value,
-  isPositive,
-  isNegative,
-  isZero,
-}: RandomNumberProps) => {
+export const RandomNumber = ({ value, isPositive, isNegative, isZero }: RandomNumberProps) => {
   return (
     <div>
-      {value} {isPositive && 'positive'} {isNegative && 'negative'} {' '}
-      {isZero && 'zero'}
+      {value} {isPositive && 'positive'} {isNegative && 'negative'} {isZero && 'zero'}
     </div>
   )
 }

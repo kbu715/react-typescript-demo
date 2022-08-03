@@ -3,9 +3,9 @@ type ListProps<T> = {
   onClick: (value: T) => void
 }
 
-export const List = <T extends { id: number, first: string, last: string }>({
+export const List = <T extends { id: number; first: string; last: string }>({
   items,
-  onClick
+  onClick,
 }: ListProps<T>) => {
   return (
     <div>

@@ -3,10 +3,6 @@ type ContainerProps = {
   styles: React.CSSProperties // react version 17 ~
 }
 
-export const Container = ({children, styles}: ContainerProps) => {
-  return (
-    <div style={styles}>
-      {children}
-    </div>
-  )
+export const Container = ({ children, styles }: ContainerProps) => {
+  return <div style={styles}>{children}</div>
 }

@@ -1,24 +1,24 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from 'react'
 
 export const MutableRef = () => {
-  const [timer, setTimer] = useState(0);
-  const interValRef = useRef<number | null>(null);
+  const [timer, setTimer] = useState(0)
+  const interValRef = useRef<number | null>(null)
 
   const stopTimer = () => {
     if (interValRef.current) {
-      window.clearInterval(interValRef.current);
+      window.clearInterval(interValRef.current)
     }
   }
 
   useEffect(() => {
-    interValRef.current = window.setInterval(() => { // setInterval returns id(number)
+    interValRef.current = window.setInterval(() => {
+      // setInterval returns id(number)
       setTimer((timer) => timer + 1)
-    }, 1000);
+    }, 1000)
 
     return () => {
-      stopTimer();
+      stopTimer()
     }
-
   }, [])
 
   return (

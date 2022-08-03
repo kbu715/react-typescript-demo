@@ -1,10 +1,6 @@
-import React from "react"
-import { Greet } from "../Greet"
+import React from 'react'
+import { GreetProps } from '../Greet'
 
-export const CustomComponent = (props: React.ComponentProps<typeof Greet>) => {
-  return (
-    <div>
-      {props.isLoggedIn && props.name}
-    </div>
-  )
+export const CustomComponent = (props: GreetProps) => {
+  return <div>{props.isLoggedIn && props.name}</div>
 }
